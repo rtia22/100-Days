@@ -4,24 +4,24 @@ import java.util.Queue;
 
 public class Day035 {
     public static void main(String[] args) {
-        Queue<String> stack = new LinkedList<>();
-        stack.offer("Rahma");
-        stack.offer("Tia");
-        System.out.println(stack);
+        Queue<String> queue = new LinkedList<>();
+        queue.offer("Rahma");
+        queue.offer("Tia");
+        System.out.println(queue);
         
         //menambahkan data
-        stack.offer("cantikkk");
-        System.out.println(stack);
+        queue.offer("cantikkk");
+        System.out.println(queue);
         
         //mengahpus elemen pertama
-        String value = stack.poll();
-        System.out.println("POP : " + value);
-        System.out.println(stack);
+        String value = queue.poll();
+        System.out.println("POLL : " + value);
+        System.out.println(queue);
         
         //membaca tanpa menghapus
-        value = stack.peek();
+        value = queue.peek();
         System.out.println("PEEK : " + value);
-        System.out.println(stack);
+        System.out.println(queue);
  
         
     }
